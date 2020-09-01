@@ -73,13 +73,13 @@ public class Board extends JPanel implements ActionListener {
 
     // The 'ImageIcon' class is used for displaying PNG images
     private void loadImages() {
-        ImageIcon iid = new ImageIcon("src/resources/dot.png");
+        ImageIcon iid = new ImageIcon("src/resources/smoke.png");
         ball = iid.getImage();
 
-        ImageIcon iia = new ImageIcon("src/resources/apple.png");
+        ImageIcon iia = new ImageIcon("src/resources/cow.png");
         apple = iia.getImage();
 
-        ImageIcon iih = new ImageIcon("src/resources/head.png");
+        ImageIcon iih = new ImageIcon("src/resources/ufo2.png");
         head = iih.getImage();
     }
 
