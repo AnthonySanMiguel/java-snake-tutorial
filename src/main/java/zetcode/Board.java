@@ -23,8 +23,8 @@ public class Board extends JPanel implements ActionListener {
     // Defining the constants (variables that won't change)
 
     // Determine the size of the 'board'/game window
-    private final int B_WIDTH = 300;
-    private final int B_HEIGHT = 300;
+    private final int B_WIDTH = 350;
+    private final int B_HEIGHT = 350;
 
     // The size of the 'apple' image as well as the size of the snake's body dots ('dot.png')
     private final int DOT_SIZE = 10;
@@ -37,7 +37,7 @@ public class Board extends JPanel implements ActionListener {
     private final int RAND_POS = 29;
 
     // Determine the 'speed' of the game
-    private final int DELAY = 140;
+    private int DELAY = 100;
 
     // These two arrays store the x and y coordinates of all joints of a snake.
     private final int x[] = new int[ALL_DOTS];
@@ -79,7 +79,7 @@ public class Board extends JPanel implements ActionListener {
         ImageIcon iia = new ImageIcon("src/resources/cow.png");
         apple = iia.getImage();
 
-        ImageIcon iih = new ImageIcon("src/resources/ufo2.png");
+        ImageIcon iih = new ImageIcon("src/resources/ufo.png");
         head = iih.getImage();
     }
 
@@ -121,7 +121,7 @@ public class Board extends JPanel implements ActionListener {
 
     // Details for 'Game Over' screen window
     private void gameOver(Graphics g) {
-        String msg = "Game Over";
+        String msg = "You crashed...Game Over";
         Font small = new Font("Helvetica", Font.BOLD, 14);
         FontMetrics metr = getFontMetrics(small);
         g.setColor(Color.white);
